@@ -10,7 +10,7 @@ send_link_form.addEventListener('submit', (e) => {
         document.querySelector('#send_link_error').innerHTML = 'Please enter a link';
         return;
     }
-    fetch('http://127.0.0.1:3000/api/addquestionurl', {
+    fetch('https://solvemorequestions-backend.onrender.com/api/addquestionurl', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ get_link_form.addEventListener('submit', (e) => {
     document.getElementById('get_question_text_link').innerHTML = '';
     document.getElementById('get_question_error').innerHTML = '';
 
-    fetch('http://127.0.0.1:3000/api/getquestionurl', {
+    fetch('https://solvemorequestions-backend.onrender.com/api/getquestionurl', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json'
