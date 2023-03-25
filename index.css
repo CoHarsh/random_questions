@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* dark theam */
+body{
+    background-color: #1e1e1e;
+    color: #fff;
+    /* center */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#header_container{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#send_link_container{
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+#send_link_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#send_link_input{
+    width: 60vw;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* popince font */
+    font-family: 'Poppins', sans-serif;
+}
+
+#send_link_button{
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* popince font */
+    font-family: 'Poppins', sans-serif;
+}
+
+#send_link_error{
+    color: rgba(255, 0, 0, 0.685);
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /* popince font */
+    font-family: 'Poppins', sans-serif;
+}
+
+#send_link_success{
+    color: rgba(32, 211, 32, 0.815);
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* get question */
+#get_question_container{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#get_question_text_link{
+    /* // yellow color */
+    color: #f0e68c;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#get_random_title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#get_question_button{
+    width: auto;
+    height: 45px;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    background-color: rgb(52, 173, 99);
+    color: rgb(36, 34, 34);
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}

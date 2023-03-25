@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetRandQues | A Random Question Generator
+    </title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- poppins font google fonbt -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div id="header_container">
+        <h1 id="header_title">Get your daily dose of <span style="color:rgb(52, 173, 99); margin-right: 4px">Coding.</span>Question</h1>
+        <h3 id="header_subtitle">
+            Questions that you wish to do for later but never do.
+        </h3>
+    </div>
+
+    <!--send the link -->
+    <div id="send_link_container">
+        <form id="send_link_form">
+            <input type="text" id="send_link_input" placeholder="Enter Question URL">
+            <button type="submit" id="send_link_button">Save Link</button>
+        </form>
+        <p id="send_link_error"></p>
+        <p id="send_link_success"></p>
+    </div>
+
+
+
+    <!--get the question -->
+    <div id="get_question_container">
+        <h2 id="get_random_title">Get Random Question</h2>
+        <form id="get_question_form">
+            <button id="get_question_button" type="submit">Get Question</button>
+        </form>
+        <span id="get_question_text_link"></span>
+        <p id="get_question_error"></p>
+
+
+    </div>
+
+</body>
+<script src="index.js"></script>
+</html>
