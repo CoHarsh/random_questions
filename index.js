@@ -20,8 +20,8 @@ app.use(bodyParser.json());
 //routes
 app.use('/api', router);
 
-app.listen(PORT , () => {
-    connect_db();
+app.listen(PORT , async () => {
+    await connect_db();
     console.log(`Server listening on port ${PORT}`);
 });
 
