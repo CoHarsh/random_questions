@@ -1,8 +1,11 @@
 var validUrl = require('valid-url');
 const QuestionUrl = require('../Model/Urls');
 
+const domains = require('../domains');
+
 const addQuestionUrl = async (req, res) => {
     const url = req.body.url;
+    
     if(!url){
         res.status(401).send({
             error: 'Url not provided',
@@ -19,9 +22,28 @@ const addQuestionUrl = async (req, res) => {
         return;
     }
 
+    // allowed only domains from domains.js
+    let isallowed = false;
+    for(let i=0; i<domains.length; i++){
+        const domain = domains[i];
+        if(url.includes(domain)){
+            isallowed = true;
+            break;
+        }
+    }
+    if(!isallowed){
+        res.status(401).send({
+            error: 'Url not allowed',
+            message: 'Please provide url from allowed domains'
+        })
+        return;
+    }
+
     const isalready_added = await QuestionUrl.findOne({
         question_url: url
     });
+
+
 
     if(isalready_added){
         res.status(401).send({
