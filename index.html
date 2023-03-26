@@ -16,6 +16,18 @@
 
 </head>
 <body>
+    <!-- header -->
+    <!-- horizontal breaking news line that show the text -->
+    <header>
+        <div id="breaking_news_container">
+            <div id="breaking_news_text">
+                
+            </div>
+        </div>
+    </header>
+    
+
+<div id="bodywebsite">
     <div id="header_container">
         <h1 id="header_title">Get your daily dose of <span style="color:rgb(52, 173, 99); margin-right: 4px">Coding.</span>Question</h1>
         <h3 id="header_subtitle">
@@ -29,24 +41,26 @@
             <input type="text" id="send_link_input" placeholder="Enter Question URL">
             <button type="submit" id="send_link_button">Save Link</button>
         </form>
-        <p id="send_link_error"></p>
-        <p id="send_link_success"></p>
+        <p id="send_link_messgae" style="min-height: 25px;"></p>
     </div>
 
 
 
     <!--get the question -->
     <div id="get_question_container">
-        <h2 id="get_random_title">Get Random Question</h2>
+        <h2 id="get_random_title">Get <span style="color:rgb(52, 173, 99)">Question.</span></h2>
         <form id="get_question_form">
             <button id="get_question_button" type="submit">Get Question</button>
         </form>
-        <span id="get_question_text_link"></span>
-        <p id="get_question_error"></p>
+        <span id="get_question_text_link" style="min-height: 25px;"></span>
+        <p id="get_question_error" style="min-height: 25px;"></p>
 
 
     </div>
 
+</div>
+
 </body>
 <script src="index.js"></script>
+<script src="safeitems.js"></script>
 </html>

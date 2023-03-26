@@ -5,19 +5,24 @@
     font-family: 'Poppins', sans-serif;
 }
 /* dark theam */
+
 body{
+    height: 100vh;
     background-color: #1e1e1e;
     color: #fff;
-    /* center */
+    overflow: hidden;
+}
+
+#bodywebsite{
+    
+    margin-top: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     flex-direction: column;
 }
 #header_container{
     text-align: center;
-    margin-top: 20px;
 }
 
 #send_link_container{
@@ -59,7 +64,7 @@ body{
     font-family: 'Poppins', sans-serif;
 }
 
-#send_link_error{
+#send_link_messgae{
     color: rgba(255, 0, 0, 0.685);
     font-size: 15px;
     font-weight: 500;
@@ -67,14 +72,6 @@ body{
     margin-bottom: 10px;
     /* popince font */
     font-family: 'Poppins', sans-serif;
-}
-
-#send_link_success{
-    color: rgba(32, 211, 32, 0.815);
-    font-size: 15px;
-    font-weight: 300;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 
@@ -96,7 +93,7 @@ body{
 }
 
 #get_random_title{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -116,4 +113,41 @@ body{
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Poppins', sans-serif;
+}
+
+
+/* // breaking new css horizonatal scroll */
+#breaking_news_container{
+    margin-top: 3px;
+    margin-bottom:10px;
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid #fff;
+
+}
+
+
+#breaking_news_text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    animation: breaking_news 10s linear infinite;
+}
+
+#breaking_news_text p{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+@keyframes breaking_news{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
 }
